@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale 1">
+    <meta name="description" content="we are going to use the form element">
+    <meta name="robots" content="noindex,nofollow">
+    <!-- linking the css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title> Pizza Order Page</title>
+    <script type="text/javascript" src="./js/javascript.js"></script>
+</head>
+
+<body class="Formpg">
+    <!-- creating a header similar to the main page  -->
+    <header>
+        <!-- logo , name and navigation link to other page  -->
+        <div>
+            <div>
+                <a href="index.html"><img src="./img/logo1.jpeg" alt="header logo"></a>
+            </div>
+            <div>
+                <h2>Welcome To Pizza</h2>
+            </div>
+        </div>
+        <div>
+            <nav>
+                <menu>
+                    <li><a href="order.html"> Order </a></li>
+                    <li><a href="index.html"> Home Page </a></li>
+                </menu>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Form to select and customize pizza -->
+    <main>
+        <section>
+            <h1>Customize Your Pizza</h1>
+        </section>
+        <section>
+            <form action="#" enctype="multipart/form-data">
+                <!-- div for pizza -->
+                <div>
+                    <!-- option for sizes -->
+                    <div>
+                        <h3> Size </h3>
+                        <input type="radio" id="small" name="size" value="smallsize">
+                        <label for="small"> Small </label>
+                        <input type="radio" id="medium" name="size" value="mediumsize">
+                        <label for="medium"> Medium </label>
+                        <input type="radio" id="large" name="size" value="largesize">
+                        <label for="small"> Large </label>
+
+                        <h3> Crust </h3>
+                        <input type="radio" id="handmadepan" name="crust" value="handmadepan">
+                        <label for="handmadepan"> Handmade Pan </label>
+                        <input type="radio" id="originalhandtossed" name="crust" value="originalhandtossed">
+                        <label for="originalhandtossed"> Original Hand Tossed </label>
+                        <input type="radio" id="ThinCrust" name="crust" value="ThinCrust">
+                        <label for="ThinCrust"> ThinCrust </label>
+                    </div>
+                    <!-- option for cheese -->
+                    <div>
+                        <h3> Cheese </h3>
+                        <input type="checkbox" id="cheese1" name="Cheddar" value="cheese1">
+                        <label for="cheese1"> Cheddar</label>
+                        <input type="checkbox" id="cheese2" name="Parmigiano-Reggiano" value="cheese2">
+                        <label for="cheese2">Parmigiano-Reggiano</label>
+                        <input type="checkbox" id="cheese3" name="Mozzarella" value="cheese3">
+                        <label for="cheese3">Mozzarella</label>
+                    </div>
+
+                    <!-- Option for Sauce  -->
+                    <div>
+                        <h3> Sauces </h3>
+                        <input type="radio" id="Pizza" name="Sauce" value="PizzaSauce">
+                        <label for="Pizza"> Pizza Sauce </label>
+                        <input type="radio" id="bbq" name="Sauce" value="bbqSauce">
+                        <label for="bbq"> BBQ Sauce </label>
+                        <input type="radio" id="alfredo" name="Sauce" value="alfredoSauce">
+                        <label for="alfredo"> Alfredo Sauce </label>
+                        <input type="radio" id="hearty" name="Sauce" value="heartySauce">
+                        <label for="hearty"> Hearty Marinara Sauce </label>
+                        <input type="radio" id="Ranch" name="Sauce" value="RanchSauce">
+                        <label for="Ranch"> Ranch Sauce </label>
+                        <input type="radio" id="Garlic" name="Sauce" value="GarlicSauce">
+                        <label for="Garlic"> Garlic Parmesan Sauce </label>
+                    </div>
+
+                    <!-- Option For toppings -->
+                    <div>
+                        <h3>Toppings</h3>
+                        <div>
+                            <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                            <label for="pepperoni"> pepperoni </label>
+
+                            <input type="checkbox" id="Ham" name="Ham" value="Ham">
+                            <label for="Ham"> Ham </label>
+
+                            <input type="checkbox" id="Bacon" name="Bacon" value="Bacon">
+                            <label for="Bacon"> Bacon </label>
+
+                            <input type="checkbox" id="Sausage" name="Sausage" value="Sausage">
+                            <label for="Sausage"> Sausage </label>
+
+                            <input type="checkbox" id="Mushroom" name="Mushroom" value="Mushroom">
+                            <label for="Mushroom"> Mushroom </label>
+
+                            <input type="checkbox" id="Pineapple" name="Pineapple" value="Pineapple">
+                            <label for="Pineapple"> Pineapple </label>
+
+                            <input type="checkbox" id="Onion" name="Onion" value="Onion">
+                            <label for="Onion"> Onion </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Tomatoes" name="Tomatoes" value="Tomatoes">
+                            <label for="Tomatoes"> Tomatoes </label>
+
+                            <input type="checkbox" id="BlackOlives" name="BlackOlives" value="BlackOlives">
+                            <label for="BlackOlives"> Black Olives </label>
+
+                            <input type="checkbox" id="GreenOlives" name="GreenOlives" value="GreenOlives">
+                            <label for="GreenOlives"> Green Olives </label>
+
+                            <input type="checkbox" id="GreenPepper" name="GreenPepper" value="GreenPepper">
+                            <label for="GreenPepper"> Green Pepper </label>
+
+                            <input type="checkbox" id="Jalapeno" name="Jalapeno" value="Jalapeno">
+                            <label for="Jalapeno"> Jalapeno Peppers </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="BabySpinach" name="BabySpinach" value="BabySpinach">
+                            <label for="BabySpinach"> Baby Spinach </label>
+
+                            <input type="checkbox" id="RRPepper" name="RRPepper" value="RRPepper">
+                            <label for="RRPepper"> Rosted Red Pepper </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- div for personal details -->
+                <div>
+                    <h3> Enter Your Name </h3>
+                    <input type="text" id="name" name="fname" placeholder="Name (Required)" required >
+                    <div>
+                        <h3> Enter your Email </h3><input type="email" name="email" placeholder="Your Email (Required)" required
+                        >
+                    </div>
+
+                    <div>
+                    <h3>Enter Your Telephone Number</h3>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="511-545-8827">
+                    </div>
+
+                    <div>
+                    <h3>Enter your Address</h3>
+                    <textarea name="address" id="email" rows="10" cols="30" placeholder=" Enter Your Address " required></textarea>
+                    </div>
+                    <input type="submit" value="Order" onclick="validateForm()">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <h3> About us </h3>
+        <p> Branches all over Barrie : (521)458-1145 </p>
+    </footer>
+</body>
